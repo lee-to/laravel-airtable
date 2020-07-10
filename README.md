@@ -24,6 +24,29 @@ AIRTABLE_BASE=
 AIRTABLE_TABLE=
 ```
 
+## config/app.php:
+
+Add alias
+
+```bash
+'aliases' => [
+        ...
+        
+        'AirTable' => \AirTableLaravel\Facades\AirTableFacade::class,
+    ],
+```
+
+Add provider
+
+```bash
+'providers' => [
+
+        ...
+
+        AirTableLaravel\Providers\AirTableServiceProvider::class,
+    ],
+```
+
 ## Usage
 
 Get token and base from [AirTable Account](http://airtable.com/account) and [AirTable API](http://airtable.com/api)
