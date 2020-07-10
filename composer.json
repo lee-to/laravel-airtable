@@ -1,0 +1,43 @@
+{
+  "name": "lee-to/laravel-airtable",
+  "description": "AirTable API client for Laravel",
+  "keywords": ["airtable", "laravel", "php"],
+  "type": "library",
+  "homepage": "https://github.com/lee-to/laravel-airtable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Danil Shutsky",
+      "email": "leetodev@ya.ru",
+      "homepage": "https://github.com/lee-to"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "lee-to/php-airtable": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8.35 || ^5.7",
+    "mockery/mockery": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AirTableLaravel\\": "src/AirTableLaravel/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AirTableLaravel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AirTableLaravel\\Providers\\AirTableServiceProvider"
+      ],
+      "aliases": {
+        "Airtable": "AirTableLaravel\\Facades\\AirTableFacade"
+      }
+    }
+  }
+}
