@@ -25,11 +25,6 @@
       "AirTableLaravel\\": "src/AirTableLaravel/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "AirTableLaravel\\Tests\\": "tests/"
-    }
-  },
   "extra": {
     "laravel": {
       "providers": [

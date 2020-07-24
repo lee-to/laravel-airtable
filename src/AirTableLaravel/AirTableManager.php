@@ -1,6 +1,6 @@
 <?php
 
-namespace AirTableLaravel\Providers;
+namespace AirTableLaravel;
 
 use AirTable\AirTable as AirTableLaravel;
 use AirTableLaravel\AirTable as AirTableClient;
