@@ -3,6 +3,7 @@
 namespace AirTableLaravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use AirTableLaravel\AirTableManager;
 
 /**
  * Class AirTableServiceProvider
